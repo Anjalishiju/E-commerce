@@ -1,0 +1,291 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+  <main>
+        <!-- page-banner-area-start -->
+        <div class="page-banner-area page-banner-height" data-background="{% static 'assets/img/banner/page-banner-3.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="page-banner-content text-center">
+                            <h4 class="breadcrumb-title">FAQs</h4>
+                            <div class="breadcrumb-two">
+                                <nav>
+                                   <nav class="breadcrumb-trail breadcrumbs">
+                                      <ul class="breadcrumb-menu">
+                                         <li class="breadcrumb-trail">
+                                            <a href="{% url 'home' %}"><span>Home</span></a>
+                                         </li>
+                                         <li class="trail-item">
+                                            <span>FAQs</span>
+                                         </li>
+                                      </ul>
+                                   </nav>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page-banner-area-end -->
+
+        <!-- faq-area-start -->
+        <div class="faq-area mt-70 mb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="single-faqs mb-40">
+                            <div class="faq-title">
+                                <h5>Order and Returns</h5>
+                            </div>
+                            <div class="faq-content mt-10">
+                                <div class="accordion" id="accordionExample1">
+                                      <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                Can I order over the phone?
+                                            </button>
+                                         </h2>
+                                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                           <p>
+                                               To order a phone, you can follow these general steps:
+
+1. **Research and Choose**: Decide on the phone model you want based on your budget, features, and brand preference. You can visit the manufacturer's website or online retailers to explore options.
+
+2. **Select Retailer**: Choose a reputable retailer or online store to purchase the phone. Ensure they offer secure payment methods and genuine products.
+
+3. **Place Order**: Add the selected phone to your cart and proceed to checkout. Enter your shipping address and payment information. Review your order before confirming.
+
+4. **Payment**: Make the payment using your preferred method (credit/debit card, online banking, etc.). Some retailers may offer cash on delivery (COD) options.
+
+5. **Confirmation**: After placing the order, you should receive a confirmation email or SMS with the order details and estimated delivery date.
+
+6. **Track Order**: Most retailers provide a tracking number to monitor the delivery status. You can use this to check the progress of your order.
+
+7. **Receive and Inspect**: Once the phone arrives, inspect the package for any damage. If everything looks good, you can start using your new phone!
+
+Remember to keep your order details and warranty information safe for future reference.
+                                           </p>  </div>
+                                         </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                               What are the procedures for return/replacement?
+                                            </button>
+                                         </h2>
+                                         <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <p>
+                                                The procedures for return or replacement can vary depending on the seller's policies and the nature of the product. However, here are some general steps that are commonly followed:
+
+1. **Check the Return Policy**: Before initiating a return or replacement, review the seller's return policy. Pay attention to the time frame within which returns are accepted, any conditions that need to be met (e.g., original packaging, unused condition), and any items that may be excluded from returns (e.g., clearance items, personalized products).
+
+2. **Initiate the Return/Replacement**: If your purchase is eligible for return or replacement, initiate the process through the seller's website or customer service. Provide details such as your order number, the reason for the return, and whether you are requesting a refund or replacement.
+
+3. **Package the Item**: If returning the item, package it securely, preferably in its original packaging. Include any accessories, manuals, or other items that came with the product.
+
+4. **Return Shipping**: Depending on the seller's policy, you may be responsible for the cost of return shipping. Some sellers provide prepaid shipping labels for returns.
+
+5. **Inspection and Processing**: Once the seller receives the returned item, they will inspect it to ensure it meets their return policy requirements. If the return is approved, they will process your refund or replacement.
+
+6. **Refund or Replacement**: If you are eligible for a refund, the seller will issue it to your original payment method. If you are receiving a replacement, the seller will ship the new item to you.
+
+7. **Follow-Up**: If you have not received confirmation of your return or replacement within a reasonable time frame, follow up with the seller's customer service for updates.
+
+It's important to familiarize yourself with the seller's return policy and follow their procedures to ensure a smooth return or replacement process.
+                                            </p> </div>
+                                         </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              Can i know about the return policy
+                                            </button>
+                                         </h2>
+                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                           <p>
+                                               Certainly! Return policies can vary between sellers, but here is a general overview of what you might expect:
+
+1. **Time Frame**: Sellers typically have a specific time frame within which you can return an item. This could range from 7 to 30 days from the date of purchase or delivery.
+
+2. **Condition of the Item**: The item usually needs to be in its original condition, unused, and in its original packaging. Some sellers may also require all accessories and manuals to be included.
+
+3. **Reason for Return**: You may be required to provide a reason for the return. Common reasons include receiving a damaged or defective item, receiving the wrong item, or simply changing your mind about the purchase.
+
+4. **Refund or Exchange**: Depending on the seller's policy and your preference, you may be offered a refund to your original payment method or an exchange for a similar item.
+
+5. **Return Shipping**: In some cases, you may be responsible for the cost of return shipping. However, some sellers offer free returns, especially for items that are damaged, defective, or incorrect.
+
+6. **Restocking Fee**: Some sellers may charge a restocking fee for returned items, particularly for large or expensive items. This fee is used to cover the cost of processing the return and returning the item to stock.
+
+7. **Exceptions**: There may be certain items that are not eligible for return, such as clearance or final sale items, perishable goods, or items that have been personalized or customized.
+
+It's important to review the seller's return policy before making a purchase so you understand your rights and responsibilities in case you need to return an item.
+                                           </p>    </div>
+                                         </div>
+                                      </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-faqs mb-40">
+                            <div class="faq-title">
+                                <h5>Ordering from Classic_cart</h5>
+                            </div>
+                            <div class="faq-content mt-10">
+                                <div class="accordion" id="accordionExample2">
+                                      <div class="accordion-item">
+                                         <h2 class="accordion-header" id="heading1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                            What is the rules of Payment?
+                                            </button>
+                                         </h2>
+                                         <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <p>
+                                                The rules of payment can vary depending on the context, but here are some general principles:
+
+1. **Agreed Method**: Payment should be made using the agreed-upon method, such as cash, credit/debit card, bank transfer, or online payment platforms like PayPal or Stripe.
+
+2. **Timely Payment**: Payments should be made on time as per the agreed schedule or terms. Late payments may incur penalties or interest charges.
+
+3. **Receipt**: Always ask for a receipt or proof of payment as a record of the transaction. This is important for tracking payments and resolving any disputes.
+
+4. **Security**: Ensure that payment methods used are secure to protect your financial information. Use reputable payment gateways and avoid sharing sensitive information over unsecured channels.
+
+5. **Dispute Resolution**: In case of payment disputes, try to resolve them amicably with the other party. If necessary, seek legal advice or use dispute resolution mechanisms provided by payment processors or regulatory authorities.
+
+6. **Tax Compliance**: Ensure that payments are made in compliance with tax regulations. Keep records of all transactions for tax purposes.
+
+7. **Cancellation and Refunds**: Understand the terms and conditions regarding cancellation and refunds. Some payments may be non-refundable or subject to certain conditions.
+
+8. **Foreign Payments**: If making or receiving payments internationally, be aware of currency exchange rates, fees, and any regulatory requirements that may apply.
+
+It's important to familiarize yourself with the specific rules and regulations that apply to your situation to ensure compliance and avoid any issues.
+                                            </p>
+                                               </div>
+                                         </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                         <h2 class="accordion-header" id="heading2">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapseTwo">
+                                                How much i need to pay?
+                                            </button>
+                                         </h2>
+                                         <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                           <p>
+                                               To determine how much you need to pay for a product or service, you should consider the following factors:
+
+1. **Price**: The price of the product or service is the main component of what you need to pay. This should be clearly communicated by the seller or service provider.
+
+2. **Taxes**: Depending on your location and the nature of the transaction, you may need to pay taxes such as sales tax, value-added tax (VAT), or goods and services tax (GST). These taxes are usually added to the price of the product or service.
+
+3. **Fees**: Some transactions may involve additional fees, such as processing fees, delivery fees, or service fees. These should be disclosed upfront so you can factor them into the total cost.
+
+4. **Discounts**: If you have any discounts or promotional codes, these can reduce the amount you need to pay. Make sure to apply them correctly during the checkout process.
+
+5. **Currency Conversion**: If you are paying in a different currency, you may incur currency conversion fees or be subject to exchange rates that can affect the final amount you need to pay.
+
+6. **Payment Method**: The method of payment you choose can also impact the total cost. Some payment methods may incur additional fees, while others may offer discounts or rewards.
+
+By considering these factors, you can determine the total amount you need to pay for a product or service and ensure that there are no surprises when it comes time to make the payment.
+                                           </p>  </div>
+                                         </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                         <h2 class="accordion-header" id="heading3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                               How many days does it takes to get my order ?
+
+                                            </button>
+                                         </h2>
+                                         <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                           <p>
+                                               The time it takes to receive your order can vary depending on several factors, including the seller's location, shipping method, and the destination of the package. Here are some general guidelines:
+
+1. **Standard Shipping**: For domestic orders, standard shipping typically takes anywhere from 2 to 10 business days. For international orders, it can take 7 to 21 business days or more, depending on the country's customs process and the efficiency of the postal service.
+
+2. **Expedited Shipping**: If you choose expedited shipping, you can expect to receive your order faster, usually within 1 to 3 business days for domestic orders and 3 to 7 business days for international orders.
+
+3. **Processing Time**: Keep in mind that most sellers require some processing time before they ship your order. This can range from a few hours to a few days, depending on the seller and the volume of orders they receive.
+
+4. **Customs Clearance**: For international orders, customs clearance can also add to the delivery time. Customs processing times vary by country and can range from a few days to several weeks.
+
+5. **Tracking Information**: Once your order has shipped, you should receive tracking information that allows you to monitor its progress and get a more accurate estimate of when it will arrive.
+
+It's always a good idea to check the seller's shipping and delivery policies before placing your order so you have a clear understanding of how long it will take to receive your items.
+                                           </p>   </div>
+                                         </div>
+                                      </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- faq-area-end -->
+
+        <!-- cta-area-start -->
+        <section class="cta-area d-ldark-bg pt-55 pb-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="cta-item cta-item-d mb-30">
+                            <h5 class="cta-title">Follow Us</h5>
+                            <p>We make consolidating, marketing and tracking your social media website easy.</p>
+                            <div class="cta-social">
+                                <div class="social-icon">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="rss"><i class="fas fa-rss"></i></a>
+                                    <a href="#" class="dribbble"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="cta-item mb-30">
+                            <h5 class="cta-title">Sign Up To Newsletter</h5>
+                            <p>Join 60.000+ subscribers and get a new discount coupon  on every Saturday.</p>
+                            <div class="subscribe__form">
+                                <form action="#">
+                                    <input type="email" placeholder="Enter your email here...">
+                                    <button>subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="cta-item mb-30">
+                            <h5 class="cta-title">Download App</h5>
+                            <p>DukaMarket App is now available on App Store & Google Play. Get it now.</p>
+                            <div class="cta-apps">
+                                <div class="apps-store">
+                                    <a href="#"><img src="{% static 'assets/img/brand/app_ios.png' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'assets/img/brand/app_android.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- cta-area-end -->
+
+    </main>
+
+
+
+{% endblock %}

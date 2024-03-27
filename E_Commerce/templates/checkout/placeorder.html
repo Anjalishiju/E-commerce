@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load cart_tag %}
+{% block content %}
+ <!-- cart-area-start -->
+        <section class="cart-area pt-120 pb-120">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                        <form action="#">
+                           <div class="table-content table-responsive">
+                              <table class="table">
+                                    <thead>
+                                       <tr>
+                                          <th class="product-thumbnail">Images</th>
+                                          <th class="cart-product-name">Product</th>
+                                          <th class="product-price">Unit Price</th>
+                                          <th class="product-quantity">Quantity</th>
+                                          <th class="product-subtotal">Total</th>
+
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for key,value in request.session.cart.items %}
+                                       <tr id="id{{value.id}}">
+                                          <td class="product-thumbnail"><a href="shop-details.html"><img src="{{value.featured_image}}" alt="" name="image"></a></td>
+                                          <td class="product-name"><a href="shop-details.html" name="product">{{value.product_name}}</a></td>
+                                          <td class="product-price"><a  name="price" class="amount">₹ {{value.price}}</a></td>
+                                          <td class="product-quantity w-25">
+                                              <div class="row ">
+
+                                                  <div class="col-4">
+                                                       <a class="form-control text-center border-0" style="text-align:center" name="quantity">
+                                                       {{value.quantity}}</a>
+
+                                                  </div>
+
+
+                                              </div>
+
+                                          </td>
+                                          <td class="product-subtotal"><span class="amount">₹ {{ value.price|multiply:value.quantity }}</span></td>
+
+                                       </tr>
+                                    {% endfor %}
+
+
+                                    </tbody>
+                              </table>
+                           </div>
+                           <div class="row">
+                              <div class="col-12">
+
+                              </div>
+                           </div>
+                           <div class="row justify-content-end">
+                              <div class="col-md-5">
+                                    <div class="cart-page-total">
+
+
+                                       <a class="tp-btn-h1" id="rzp-button1">Place Order</a>
+                                    </div>
+                              </div>
+                           </div>
+                        </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- cart-area-end -->
+<form action="{% url 'success' %}" method="post">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+    "key": "rzp_test_MpMKyhUuCjF5Zf",
+    "amount": "500000",
+    "currency": "INR",
+    "name": "Acme Corp",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": "{{order_id}}",
+    "callback_url": "http://127.0.0.1:8000/success/",
+    "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
+        "name": "Gaurav Kumar",
+        "email": "gaurav.kumar@example.com",
+        "contact": "9000090000"
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
+    </form>
+
+{% endblock %}
